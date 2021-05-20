@@ -1,0 +1,111 @@
+{
+  "name": "@viva-show/video",
+  "version": "0.0.1",
+  "description": "viva-show-video",
+  "author": "f2e@quvideo.com",
+  "license": "ISC",
+  "scripts": {
+    "init": "make init",
+    "eslint": "make eslint",
+    "dev": "make dev",
+    "build:": "make build",
+    "upload-qa": "make upload-qa",
+    "upload-prod": "make upload-prod",
+    "format": "make pretty",
+    "changelog": "make changelog",
+    "test": "make test-uni"
+  },
+  "xyOSSUploader": {
+    "local": "dist",
+    "dest": "web/oss-uploader"
+  },
+  "keywords": [
+    "react",
+    "dva",
+    "antd"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.quvideo.com/WEB/base-start-vcm-react.git"
+  },
+  "pre-commit": [
+    "eslint",
+    "format"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "cz-customizable"
+    }
+  },
+  "dependencies": {
+    "@xy/design": "^0.5.0",
+    "@xy/vcm-oss-upload": "0.0.9",
+    "@xy/vid-components": "^1.4.9",
+    "antd": "3.8.4",
+    "debug": "^4.1.1",
+    "dva": "^2.4.1",
+    "dva-router-config": "^1.1.0",
+    "emoji-mart": "^2.0.0",
+    "fetch-jsonp": "^1.1.3",
+    "g2": "^2.2.1",
+    "history": "^4.7.2",
+    "isomorphic-fetch": "^2.2.1",
+    "js-cookie": "^2.2.0",
+    "lodash": "^4.17.11",
+    "moment": "^2.23.0",
+    "numeral": "^2.0.6",
+    "path-to-regexp": "^3.0.0",
+    "prop-types": "^15.6.2",
+    "qs": "^6.6.0",
+    "react": "^16.3.0",
+    "react-cookie": "^1.0.5",
+    "react-dom": "^16.3.0",
+    "react-intl": "^2.8.0",
+    "react-intl-universal": "^1.3.4",
+    "tldjs": "^2.3.1",
+    "xlsx": "^0.11.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-stage-2": "^7.0.0",
+    "@commitlint/cli": "^7.2.1",
+    "@commitlint/config-conventional": "^7.1.2",
+    "@xy/f2e-uploader": "^0.2.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.1.0",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-import": "^1.11.0",
+    "clean-webpack-plugin": "^1.0.0",
+    "conventional-changelog": "^3.0.5",
+    "conventional-changelog-cli": "^2.0.11",
+    "css-loader": "^2.0.1",
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.11.1",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^1.3.1",
+    "jest": "^24.1.0",
+    "less": "^3.9.0",
+    "less-loader": "4.1.0",
+    "prettier": "^1.15.3",
+    "regenerator-runtime": "^0.13.1",
+    "style-loader": "^0.23.1",
+    "thread-loader": "^2.1.2",
+    "webpack": "^4.28.1",
+    "webpack-bundle-analyzer": "^3.0.3",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10",
+    "webpackbar": "^3.1.5"
+  },
+  "frontname": "__viva_show_video"
+}

@@ -1,0 +1,72 @@
+.wrapper{
+    position: relative;
+    color: #fff;
+
+
+    .centerBtn {
+        i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -40px;
+            margin-left: -40px;
+            font-size: 80px;
+            cursor: pointer;
+        }
+    }
+
+    .controls {
+
+        opacity: 0;
+        transition: all .5s;
+        -webkit-transition: all .5s;
+
+        /* 控制条 */
+        .controlsBar {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px 20px 0 20px;
+            background: gradient(linear, 0 100%, 0 0, from(rgba(0, 0, 0, .9)), to(rgba(0, 0, 0, .1)));
+            background: -webkit-gradient(linear, 0 100%, 0 0, from(rgba(0, 0, 0, .9)), to(rgba(0, 0, 0, .1)));
+            /* 显示时间 */
+            .showTime{
+                margin: 5px 5px 0 5px;
+                font-size: 16px;
+            }
+
+            /* 进度条上方布局 */
+            .handleWrapper {
+                display: flex;
+                display: -webkit-flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .handle {
+                    justify-content: flex-end;
+                    align-items: center;
+
+                    i {
+                        margin-right: 15px;
+                        font-size: 20px;
+                        cursor: pointer;
+                    }
+
+                    .speed {
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.wrapper:hover {
+    .controls {
+        opacity: 1;
+        transition: all .5s;
+        -webkit-transition: all .5s;
+    }
+}
